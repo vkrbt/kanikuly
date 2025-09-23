@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каникулы — Лагерь для взрослых | 17-19 октября</title>
+    <meta name="description" content="Лагерь для взрослых Каникулы 17-19 октября. Атмосфера взрослой беззаботности, актерский тренинг, медитации, экскурсии по арт-парку. Все включено!">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Каникулы — Лагерь для взрослых | 17-19 октября">
+    <meta property="og:description" content="Атмосфера взрослой беззаботности и озорства. Когда план на день есть и этот план — кайфовать.">
+    <meta property="og:image" content="./images/main.webp">
+    <meta property="og:type" content="website">
+    
+    <!-- Schema.org Event -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Каникулы — Лагерь для взрослых",
+        "description": "Атмосфера взрослой беззаботности и озорства. Когда план на день есть и этот план — кайфовать.",
+        "startDate": "2024-10-17T17:00:00+03:00",
+        "endDate": "2024-10-19T15:00:00+03:00",
+        "location": {
+            "@type": "Place",
+            "name": "Эко-отель Rapa Nui",
+            "address": "Беларусь, Минская область"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "690",
+            "priceCurrency": "BYN"
+        }
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'display': ['Dela Gothic One', 'cursive'],
+                    },
+                    colors: {
+                        'primary': '#423BFF',
+                        'secondary': '#FF5201',
+                        'accent': '#120DA9',
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.6s ease-out',
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'bounce-slow': 'bounce 2s infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Tailwind Typography -->
+    <script src="https://cdn.tailwindcss.com/3.4.0/plugins/typography.js"></script>
+    <script src="https://cdn.tailwindcss.com/3.4.0/plugins/forms.js"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    
+    <!-- Heroicons -->
+    <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js" type="module"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Additional CSS for mobile responsiveness -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+        
+        img, video, iframe {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .container, .max-w-7xl, .max-w-6xl, .max-w-4xl, .max-w-3xl {
+            max-width: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        @media (min-width: 640px) {
+            .container, .max-w-7xl, .max-w-6xl, .max-w-4xl, .max-w-3xl {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .container, .max-w-7xl, .max-w-6xl, .max-w-4xl, .max-w-3xl {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+        
+        /* Prevent horizontal overflow in grid layouts */
+        .grid {
+            display: grid;
+            gap: 1rem;
+        }
+        
+        .grid-cols-1 {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+        
+        @media (min-width: 768px) {
+            .md\\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .lg\\:grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+            .lg\\:grid-cols-4 {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+        }
+        
+        /* Ensure all elements respect container boundaries */
+        .w-full {
+            width: 100%;
+            max-width: 100%;
+        }
+        
+        /* Fix for fixed positioned elements */
+        .fixed {
+            max-width: 100vw;
+        }
+        
+        /* Enhanced shadow for recommended plan */
+        .shadow-3xl {
+            box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        /* Smooth scaling animation */
+        .transform {
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .scale-105:hover {
+            transform: scale(1.05);
+        }
+        
+        /* FAQ Accordion Animation */
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+        
+        .faq-content.hidden {
+            max-height: 0;
+        }
+        
+        .faq-content:not(.hidden) {
+            max-height: 1000px;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .faq-button:hover .faq-icon {
+            color: #3b82f6;
+        }
+        
+        /* System-based color scheme */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111827;
+                color: #f9fafb;
+            }
+            
+            .bg-white {
+                background-color: #1f2937;
+            }
+            
+            .text-gray-900 {
+                color: #f9fafb;
+            }
+            
+            .text-gray-800 {
+                color: #e5e7eb;
+            }
+            
+            .text-gray-700 {
+                color: #d1d5db;
+            }
+            
+            .text-gray-600 {
+                color: #9ca3af;
+            }
+            
+            .text-gray-300 {
+                color: #6b7280;
+            }
+            
+            .border-gray-200 {
+                border-color: #374151;
+            }
+            
+            .border-gray-100 {
+                border-color: #4b5563;
+            }
+            
+            .bg-gray-50 {
+                background-color: #374151;
+            }
+            
+            .bg-gray-100 {
+                background-color: #4b5563;
+            }
+            
+            .bg-gray-800 {
+                background-color: #1f2937;
+            }
+            
+            .bg-gray-900 {
+                background-color: #111827;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-40 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="./logo.svg" alt="Каникулы" class="h-8 w-auto max-w-full">
+                    <span class="ml-2 text-xl font-display text-primary uppercase">Каникулы</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="text-gray-800 dark:text-gray-200 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">О мероприятии</a>
+                        <a href="#accommodation" class="text-gray-800 dark:text-gray-200 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Проживание</a>
+                        <a href="#team" class="text-gray-800 dark:text-gray-200 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Команда</a>
+                        <a href="#pricing" class="text-gray-800 dark:text-gray-200 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Стоимость</a>
+                        <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-accent transition-colors shadow-md">Забронировать</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-800 dark:text-gray-200 hover:text-primary focus:outline-none focus:text-primary transition-colors">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-md border-t border-gray-200 dark:border-gray-700 px-4 py-3 space-y-1">
+                <a href="#about" class="block px-3 py-3 text-base font-medium text-gray-800 dark:text-gray-200 hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">О мероприятии</a>
+                <a href="#accommodation" class="block px-3 py-3 text-base font-medium text-gray-800 dark:text-gray-200 hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">Проживание</a>
+                <a href="#team" class="block px-3 py-3 text-base font-medium text-gray-800 dark:text-gray-200 hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">Команда</a>
+                <a href="#pricing" class="block px-3 py-3 text-base font-medium text-gray-800 dark:text-gray-200 hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">Стоимость</a>
+                <a href="#contact" class="block px-3 py-3 text-base font-medium bg-primary text-white hover:bg-accent rounded-lg transition-colors text-center">Забронировать</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Background with gradient overlay -->
+        <div class="absolute inset-0 bg-gradient-to-br from-primary via-accent to-secondary opacity-90"></div>
+        <div class="absolute inset-0 bg-black/20"></div>
+        
+        <!-- Background image -->
+        <div class="absolute inset-0">
+            <img src="./images/main.webp" alt="Каникулы" class="w-full h-full object-cover max-w-full" loading="eager">
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div data-aos="fade-in-up" data-aos-duration="800">
+                <h1 class="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-display text-white mb-4 md:mb-6 leading-tight drop-shadow-2xl">
+                    Лагерь для взрослых
+                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-300 drop-shadow-2xl">
+                        КАНИКУЛЫ
+                    </span>
+                </h1>
+                
+                <div class="bg-white dark:bg-gray-800 rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 mb-6 md:mb-8 shadow-2xl border border-gray-100 dark:border-gray-700">
+                    <div class="text-center">
+                        <div class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-4 sm:px-6 py-2 rounded-full text-base sm:text-lg font-bold mb-4 md:mb-6 shadow-lg">
+                            17-19 октября
+                        </div>
+                        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-3 md:mb-4">
+                            Атмосфера взрослой беззаботности и озорства
+                        </h2>
+                        <p class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 font-medium leading-relaxed">
+                            Когда план на день есть и этот план — кайфовать.
+                        </p>
+                        <div class="flex flex-wrap justify-center gap-4 mt-6">
+                            <div class="flex items-center space-x-2 bg-green-50 dark:bg-green-900/20 px-4 py-2 rounded-full">
+                                <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-green-700 dark:text-green-300 font-medium">Все включено</span>
+                            </div>
+                            <div class="flex items-center space-x-2 bg-blue-50 dark:bg-blue-900/20 px-4 py-2 rounded-full">
+                                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                                <span class="text-blue-700 dark:text-blue-300 font-medium">25 человек</span>
+                            </div>
+                            <div class="flex items-center space-x-2 bg-purple-50 dark:bg-purple-900/20 px-4 py-2 rounded-full">
+                                <svg class="w-5 h-5 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                </svg>
+                                <span class="text-purple-700 dark:text-purple-300 font-medium">3 дня</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 sm:mb-0">
+                    <a href="#pricing" class="bg-secondary hover:bg-orange-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl shadow-lg">
+                        Забронировать место
+                    </a>
+                    <a href="#about" class="bg-white/90 hover:bg-white text-gray-900 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 backdrop-blur-sm border border-white/50 shadow-lg">
+                        Узнать больше
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-display text-gray-900 dark:text-white mb-6">
+                    О <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Каникулах</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    Каникулы — это лагерь для взрослых для тех, кто хочет
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-in-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Отдохнуть от рутины</h3>
+                    <p class="text-gray-700 dark:text-gray-200">Мы поможем добраться, накормим и позаботимся о тебе</p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-in-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-gradient-to-r from-secondary to-orange-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Найти новых друзей</h3>
+                    <p class="text-gray-700 dark:text-gray-200">Участники наших мероприятий продолжают общение и после</p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-in-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Перезагрузиться без алкоголя</h3>
+                    <p class="text-gray-700 dark:text-gray-200">Удовольствие приносит атмосфера и общение</p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-in-up" data-aos-delay="400">
+                    <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Вернуть лёгкость детства</h3>
+                    <p class="text-gray-700 dark:text-gray-200">Дискотека, костёр и игры в новом взрослом формате</p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-in-up" data-aos-delay="500">
+                    <div class="w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Наполниться теплом</h3>
+                    <p class="text-gray-700 dark:text-gray-200">И поддержкой в атмосфере принятия</p>
+                </div>
+                
+                <div class="bg-gradient-to-r from-primary to-secondary p-8 rounded-2xl shadow-lg" data-aos="fade-in-up" data-aos-delay="600">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-white mb-4">Ограниченное количество мест</h3>
+                        <p class="text-white/90 text-lg mb-6">В этот раз мы открываем двери для 25 человек</p>
+                        <a href="#pricing" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                            Забронировать сейчас
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- What's included -->
+            <div class="bg-white dark:bg-gray-800 rounded-3xl p-8 md:p-12 shadow-xl" data-aos="fade-in-up">
+                <h3 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">
+                    В цену <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">всё включено</span>
+                </h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-8 h-8 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="text-gray-800 dark:text-gray-200 font-medium">Проживание 3 дня (2 ночи)</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-8 h-8 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="text-gray-800 dark:text-gray-200 font-medium">Питание</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-8 h-8 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="text-gray-800 dark:text-gray-200 font-medium">Актерский тренинг</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-8 h-8 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="text-gray-800 dark:text-gray-200 font-medium">Экскурсии по арт-парку</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-8 h-8 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="text-gray-800 dark:text-gray-200 font-medium">Медитации</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-8 h-8 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="text-gray-800 dark:text-gray-200 font-medium">Атмосфера лагеря и дискотека</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation Gallery -->
+    <section id="accommodation" class="py-20 bg-white dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-display text-gray-900 dark:text-white mb-6">
+                    Где мы будем <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">жить?</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    Размещение в купольных домах с комфортом цивилизации на лоне природы
+                </p>
+            </div>
+            
+            <!-- Main accommodation features -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-900/20 p-6 rounded-2xl" data-aos="fade-in-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Купольные дома</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Размещение в мужских и женских комнатах, как в лагере</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-emerald-100 dark:from-green-900/20 dark:to-emerald-900/20 p-6 rounded-2xl" data-aos="fade-in-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Все удобства</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Горячая вода, душ, санузел в каждом куполе</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-50 to-pink-100 dark:from-purple-900/20 dark:to-pink-900/20 p-6 rounded-2xl" data-aos="fade-in-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Комфорт круглый год</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Обогреватели зимой и кондиционер летом</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-orange-50 to-red-100 dark:from-orange-900/20 dark:to-red-900/20 p-6 rounded-2xl" data-aos="fade-in-up" data-aos-delay="400">
+                    <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Электричество</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Розетки и все блага цивилизации на природе</p>
+                </div>
+            </div>
+            
+            <!-- Photo Gallery -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500" data-aos="fade-in-up" data-aos-delay="100">
+                    <img src="./images/apartament-1.webp" alt="Купольный дом" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 max-w-full" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-lg font-semibold">Уютные купольные дома</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500" data-aos="fade-in-up" data-aos-delay="200">
+                    <img src="./images/apartament-2.webp" alt="Интерьер купольного дома" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 max-w-full" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-lg font-semibold">Современный интерьер</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500" data-aos="fade-in-up" data-aos-delay="300">
+                    <img src="./images/apartament-3.webp" alt="Комната в купольном доме" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 max-w-full" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-lg font-semibold">Комфортные комнаты</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500" data-aos="fade-in-up" data-aos-delay="400">
+                    <img src="./images/apartament-4.webp" alt="Общая зона" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 max-w-full" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-lg font-semibold">Общие зоны</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500" data-aos="fade-in-up" data-aos-delay="500">
+                    <img src="./images/apartament-5.webp" alt="Ванная комната" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 max-w-full" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-lg font-semibold">Современные удобства</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500" data-aos="fade-in-up" data-aos-delay="600">
+                    <img src="./images/apartament-6.webp" alt="Вид из купольного дома" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 max-w-full" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-lg font-semibold">Вид на природу</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-display text-gray-900 dark:text-white mb-6">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Организаторы</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    Знакомьтесь с людьми, которые создают атмосферу Каникул
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Влад -->
+                <div class="group bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-in-up" data-aos-delay="100">
+                    <div class="text-center">
+                        <div class="relative mb-6">
+                            <img src="./staff/vlad.jpg" alt="Влад" class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300 max-w-full">
+                            <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Влад</h3>
+                        <p class="text-primary font-semibold mb-4">Руководитель и идейный вдохновитель</p>
+                        <div class="space-y-2 text-sm text-gray-600 dark:text-gray-300 mb-6">
+                            <p>• Собираю людей в комьюнити</p>
+                            <p>• Учусь на Гештальт Терапевта</p>
+                            <p>• Делаю подкаст о мужском Ментальном Здоровье</p>
+                            <p>• 8 лет в IT</p>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 mb-6 italic">
+                            Люблю живое, глубокое и теплое общение и умею создавать вокруг себя сообщества единомышленников.
+                        </p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://www.instagram.com/vkrbt/" target="_blank" class="text-gray-400 hover:text-pink-500 transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="https://t.me/vkrbt" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Настя -->
+                <div class="group bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-in-up" data-aos-delay="200">
+                    <div class="text-center">
+                        <div class="relative mb-6">
+                            <img src="./staff/nastya.jpg" alt="Настя" class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300 max-w-full">
+                            <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-r from-secondary to-orange-500 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Настя</h3>
+                        <p class="text-secondary font-semibold mb-4">Фотограф и видеограф</p>
+                        <div class="space-y-2 text-sm text-gray-600 dark:text-gray-300 mb-6">
+                            <p>• Автор проекта «Под кожей»</p>
+                            <p>• Будущий режиссёр, вдохновляюсь театром</p>
+                            <p>• Живу творчеством, духовностью и свободой</p>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 mb-6 italic">
+                            Вдохновляюсь чувствами людей и люблю мир вокруг 🪐
+                        </p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://www.instagram.com/an.kaverina/" target="_blank" class="text-gray-400 hover:text-pink-500 transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="https://t.me/ananasyak" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Аня -->
+                <div class="group bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-in-up" data-aos-delay="300">
+                    <div class="text-center">
+                        <div class="relative mb-6">
+                            <img src="./staff/anya.jpeg" alt="Аня" class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300 max-w-full">
+                            <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Аня</h3>
+                        <p class="text-green-600 font-semibold mb-4">Массажист и медитатор</p>
+                        <div class="space-y-2 text-sm text-gray-600 dark:text-gray-300 mb-6">
+                            <p>• Учусь Искусству быть, любить, творить</p>
+                            <p>• Мой массаж — часть этого искусства</p>
+                            <p>• Касание тонких струн тела и души</p>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 mb-6 italic">
+                            Верю: сила в правде, а правда в сердце
+                        </p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://www.instagram.com/annakorda/" target="_blank" class="text-gray-400 hover:text-pink-500 transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="https://t.me/annakorda890" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Дима -->
+                <div class="group bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-in-up" data-aos-delay="400">
+                    <div class="text-center">
+                        <div class="relative mb-6">
+                            <img src="./staff/dima.jpeg" alt="Дима" class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300 max-w-full">
+                            <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Дима</h3>
+                        <p class="text-purple-600 font-semibold mb-4">Гештальт-терапевт и видеограф</p>
+                        <div class="space-y-2 text-sm text-gray-600 dark:text-gray-300 mb-6">
+                            <p>• Учусь на гештальт-терапевта</p>
+                            <p>• Снимаю видео и подкасты</p>
+                            <p>• Люблю людей и культуру</p>
+                            <p>• 8 лет в IT</p>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 mb-6 italic">
+                            Парень, который в своей деревне будил всех в 7 утра играть в футбол до самого вечера!
+                        </p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://www.instagram.com/thedimarykunov/" target="_blank" class="text-gray-400 hover:text-pink-500 transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="https://t.me/thedimarykunov" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video and Program Section -->
+    <section class="py-20 bg-white dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Video Block -->
+            <div class="mb-20" data-aos="fade-in-up">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-display text-gray-900 dark:text-white mb-6">
+                        Виртуальная <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">экскурсия</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                        Посмотрите, где мы будем жить и проводить время
+                    </p>
+                </div>
+                
+                <div class="relative max-w-4xl mx-auto">
+                    <div class="aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                        <iframe 
+                            src="https://www.youtube.com/embed/3Ok3PtaubF0" 
+                            title="Виртуальная экскурсия по локации Rapa Nui"
+                            class="w-full h-full max-w-full"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Program Block -->
+            <div class="bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-blue-900/20 rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10" data-aos="fade-in-up">
+                <div class="text-center mb-8 md:mb-12">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-display text-gray-900 dark:text-white mb-4 md:mb-6">
+                        Программа <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Каникул</span>
+                    </h2>
+                    <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300">
+                        17-19 октября • 3 дня незабываемых впечатлений
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+                    <!-- Пятница -->
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg">
+                        <div class="text-center mb-4 md:mb-6">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+                                <span class="text-white font-bold text-lg sm:text-xl">ПТ</span>
+                            </div>
+                            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Пятница</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <p class="font-semibold text-gray-900 dark:text-white">17:00</p>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">Выезд из Минска</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <p class="font-semibold text-gray-900 dark:text-white">19:00</p>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">Прибытие на локацию, оргсобрание</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <p class="font-semibold text-gray-900 dark:text-white">19:30</p>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">Ужин</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <p class="font-semibold text-gray-900 dark:text-white">20:30</p>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">Вечерняя медитация</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <p class="font-semibold text-gray-900 dark:text-white">21:00</p>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">Знакомство у костра</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <p class="font-semibold text-gray-900 dark:text-white">22:00</p>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">Ночная экскурсия</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Суббота -->
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg border-2 border-primary">
+                        <div class="text-center mb-4 md:mb-6">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r from-secondary to-orange-500 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+                                <span class="text-white font-bold text-lg sm:text-xl">СБ</span>
+                            </div>
+                            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Суббота</h3>
+                            <p class="text-primary font-semibold text-xs sm:text-sm">Основной день</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <p class="font-semibold text-gray-900 dark:text-white">09:00</p>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">Зарядка</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <p class="font-semibold text-gray-900 dark:text-white">10:30</p>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">Групповая активность</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <p class="font-semibold text-gray-900 dark:text-white">15:30</p>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">Актерский тренинг</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <p class="font-semibold text-gray-900 dark:text-white">19:30</p>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">Дискотека</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <p class="font-semibold text-gray-900 dark:text-white">21:30</p>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">Вечерний костёр</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Воскресенье -->
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg">
+                        <div class="text-center mb-4 md:mb-6">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+                                <span class="text-white font-bold text-lg sm:text-xl">ВС</span>
+                            </div>
+                            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Воскресенье</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <p class="font-semibold text-gray-900 dark:text-white">09:00</p>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">Зарядка</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <p class="font-semibold text-gray-900 dark:text-white">10:30</p>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">Свободное время</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <p class="font-semibold text-gray-900 dark:text-white">12:00</p>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">Финальный сбор</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <p class="font-semibold text-gray-900 dark:text-white">15:00</p>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">Отъезд в Минск</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-display text-gray-900 dark:text-white mb-6">
+                    Стоимость <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">участия</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    Выберите подходящий пакет для вашего комфорта
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- БАЗА+ -->
+                <div class="bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-in-up" data-aos-delay="100">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">БАЗА+</h3>
+                        <div class="text-4xl font-bold text-primary mb-2">850 BYN</div>
+                        <p class="text-gray-600 dark:text-gray-300">Больше комфорта</p>
+                    </div>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 dark:text-gray-300">4-местное размещение</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 dark:text-gray-300">Трехразовое питание</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 dark:text-gray-300">Все активности</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 dark:text-gray-300">2 экскурсии</span>
+                        </div>
+                    </div>
+                    
+                    <button onclick="openTelegram('vkrbt', 'Привет! Хочу забронировать место в пакете БАЗА+ (850 BYN) на Каникулы 17-19 октября.')" class="w-full bg-primary text-white py-3 px-6 rounded-xl font-semibold hover:bg-accent transition-colors">
+                        Забронировать
+                    </button>
+                </div>
+                
+                <!-- БАЗА -->
+                <div class="bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-300 border-2 border-green-500 relative transform scale-105" data-aos="fade-in-up" data-aos-delay="200">
+                    <!-- Рекомендуемый бейдж -->
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <div class="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>РЕКОМЕНДУЕМ</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">БАЗА</h3>
+                        <div class="text-4xl font-bold text-green-600 dark:text-green-400 mb-2">690 BYN</div>
+                        <p class="text-gray-600 dark:text-gray-300 font-semibold">Лучшее соотношение цены и качества</p>
+                    </div>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 dark:text-gray-300">5-местное размещение</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 dark:text-gray-300">Трехразовое питание</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 dark:text-gray-300">Все активности</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 dark:text-gray-300">2 экскурсии</span>
+                        </div>
+                    </div>
+                    
+                    <button onclick="openTelegram('vkrbt', 'Привет! Хочу забронировать место в пакете БАЗА (690 BYN) на Каникулы 17-19 октября.')" class="w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white py-4 px-6 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        🎯 Забронировать БАЗА
+                    </button>
+                </div>
+                
+                <!-- ЛЮКС -->
+                <div class="bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-in-up" data-aos-delay="300">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">ЛЮКС</h3>
+                        <div class="text-4xl font-bold text-secondary mb-2">1390 BYN</div>
+                        <p class="text-gray-600 dark:text-gray-300">Максимальный комфорт</p>
+                    </div>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 dark:text-gray-300">2-местное размещение</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 dark:text-gray-300">Трехразовое питание</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 dark:text-gray-300">Все активности</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 dark:text-gray-300">2 экскурсии</span>
+                        </div>
+                    </div>
+                    
+                    <button onclick="openTelegram('vkrbt', 'Привет! Хочу забронировать место в пакете ЛЮКС (1390 BYN) на Каникулы 17-19 октября.')" class="w-full bg-secondary text-white py-3 px-6 rounded-xl font-semibold hover:bg-orange-600 transition-colors">
+                        Забронировать
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Payment Info -->
+            <div class="mt-16 bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-lg" data-aos="fade-in-up">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Условия оплаты</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Стоимость указана для одного участника</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-2xl p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center">
+                                    <span class="text-white font-bold text-lg">30%</span>
+                                </div>
+                                <h4 class="text-xl font-bold text-gray-900 dark:text-white">Предоплата</h4>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300 mb-3">Для резервации места в туре</p>
+                            <div class="bg-red-100 dark:bg-red-900/30 rounded-lg p-3">
+                                <p class="text-red-700 dark:text-red-300 text-sm font-semibold">⚠️ Эта сумма является невозвратной</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-2xl p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+                                    <span class="text-white font-bold text-lg">70%</span>
+                                </div>
+                                <h4 class="text-xl font-bold text-gray-900 dark:text-white">Остаток</h4>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300">Необходимо внести в день заезда</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-bold text-gray-900 dark:text-white">Отмена участия</h4>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300 mb-3">Сообщите не позднее чем за 10 дней до выезда</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Мы постараемся найти участника на ваше место и сохранить ваши средства</p>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-2xl p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-bold text-gray-900 dark:text-white">Переоформление</h4>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300">В любой момент можете переоформить поездку на кого-то из близких или знакомых</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Что входит в стоимость -->
+                <div class="bg-gradient-to-r from-gray-50 to-blue-50 dark:from-gray-700 dark:to-blue-900/20 rounded-2xl p-6">
+                    <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">Что входит в стоимость</h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700 dark:text-gray-300">Сам ретрит</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700 dark:text-gray-300">3-разовое питание</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700 dark:text-gray-300">Проживание в купольном доме</span>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700 dark:text-gray-300">Экскурсии</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700 dark:text-gray-300">Все активности и практики</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700 dark:text-gray-300">Атмосфера лагеря и дискотека</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white dark:bg-gray-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+                    Остались <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">вопросы?</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300">
+                    Напишите нам, мы ответим на все вопросы
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8" data-aos="fade-in-up" data-aos-delay="100">
+                    <div class="bg-gradient-to-br from-primary/10 to-secondary/10 dark:from-primary/20 dark:to-secondary/20 rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Свяжитесь с нами</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 dark:text-white">Telegram</h4>
+                                    <p class="text-gray-600 dark:text-gray-300">@thedimarykunov</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 dark:text-white">Email</h4>
+                                    <p class="text-gray-600 dark:text-gray-300">info@kanikuly.by</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 dark:text-white">Время работы</h4>
+                                    <p class="text-gray-600 dark:text-gray-300">Пн-Вс: 9:00 - 21:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Actions -->
+                    <div class="space-y-4">
+                        <button onclick="openTelegram('thedimarykunov', 'Привет! У меня есть вопросы по Каникулам 17-19 октября.')" class="w-full bg-primary text-white py-4 px-6 rounded-xl font-semibold hover:bg-accent transition-colors flex items-center justify-center space-x-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                            </svg>
+                            <span>Написать в Telegram</span>
+                        </button>
+                        
+                        <button onclick="openTelegram('thedimarykunov', 'Привет! Хочу забронировать место на Каникулы 17-19 октября.')" class="w-full bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white py-4 px-6 rounded-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors flex items-center justify-center space-x-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                            </svg>
+                            <span>Забронировать место</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- FAQ -->
+                <div class="space-y-6" data-aos="fade-in-up" data-aos-delay="200">
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Ответы на частые вопросы</h3>
+                    
+                    <div class="space-y-4">
+                        <!-- FAQ Item 1 -->
+                        <div class="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden">
+                            <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" data-faq="1">
+                                <h4 class="font-semibold text-gray-900 dark:text-white">Что мы будем есть?</h4>
+                                <svg class="faq-icon w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-4">
+                                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">Для усиления эффекта ретрита предлагаем простую, здоровую, сбалансированную пищу по принципам <strong>Аюрведы</strong>, <strong>Натуропатии</strong> и <strong>Биомеханики</strong>.</p>
+                                <div class="text-gray-600 dark:text-gray-300 text-sm space-y-2">
+                                    <p><strong>Пятница:</strong> Овёс с финиками и имбирём, тыквенно-чечевичный крем-суп, гречка с подсолнечником</p>
+                                    <p><strong>Суббота:</strong> Кускус с изюмом и миндалем, горячий гаспачо с сырными тефтелями, гречневая лапша с вишневым чатни</p>
+                                    <p><strong>Воскресенье:</strong> Пшённые сырники с маком, борщ с фасолью, ржаные блины с грибами</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 2 -->
+                        <div class="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden">
+                            <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" data-faq="2">
+                                <h4 class="font-semibold text-gray-900 dark:text-white">Где мы будем жить?</h4>
+                                <svg class="faq-icon w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-4">
+                                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3"><strong>Размещение в купольных домах</strong></p>
+                                <ul class="text-gray-600 dark:text-gray-300 text-sm space-y-1">
+                                    <li>• Размещение в мужских и женских комнатах, как в лагере</li>
+                                    <li>• Горячая вода, душ и все банные принадлежности</li>
+                                    <li>• Уютная и свежая постель</li>
+                                    <li>• Тёплый санузел в каждом куполе</li>
+                                    <li>• Электричество и розетки</li>
+                                    <li>• Комфортная температура круглый год</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 3 -->
+                        <div class="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden">
+                            <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" data-faq="3">
+                                <h4 class="font-semibold text-gray-900 dark:text-white">Порядок оплаты / Что входит в стоимость?</h4>
+                                <svg class="faq-icon w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-4">
+                                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">Для резервации места необходимо внести <strong>30% от стоимости тура</strong> (невозвратная сумма). <strong>70% стоимости</strong> необходимо внести в день заезда.</p>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm">В стоимость входит: ретрит, 3-разовое питание, проживание в купольном доме, экскурсии.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 4 -->
+                        <div class="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden">
+                            <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" data-faq="4">
+                                <h4 class="font-semibold text-gray-900 dark:text-white">Как доехать?</h4>
+                                <svg class="faq-icon w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-4">
+                                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3"><strong>3 способа добраться:</strong></p>
+                                <ul class="text-gray-600 dark:text-gray-300 text-sm space-y-1">
+                                    <li>• <strong>На машине:</strong> 150 км от Минска по трассе М1 до Rapa Nui</li>
+                                    <li>• <strong>С попутчиками:</strong> мы поможем найти попутчиков "за рулём"</li>
+                                    <li>• <strong>На общественном транспорте:</strong> маршрутка Минск-Новолукомль + такси 161</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 5 -->
+                        <div class="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden">
+                            <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" data-faq="5">
+                                <h4 class="font-semibold text-gray-900 dark:text-white">Какое питание?</h4>
+                                <svg class="faq-icon w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-4">
+                                <p class="text-gray-600 dark:text-gray-300 text-sm">3-разовое вегетарианское питание по принципам Аюрведы. Здоровое, сбалансированное и целительное питание, которое способствует достижению состояния лёгкости и служит дополнительным детоксом.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 6 -->
+                        <div class="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden">
+                            <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" data-faq="6">
+                                <h4 class="font-semibold text-gray-900 dark:text-white">Что делать, если не получится приехать?</h4>
+                                <svg class="faq-icon w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-4">
+                                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3"><strong>Предоплата за Каникулы не возвращается</strong></p>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm">Но мы постараемся подыскать на ваше место другого участника, если вы сообщите об отказе не позднее чем за 10 дней до выезда. Также в любой момент вы можете переоформить поездку на кого-то из своих близких или знакомых.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 7 -->
+                        <div class="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden">
+                            <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" data-faq="7">
+                                <h4 class="font-semibold text-gray-900 dark:text-white">Что брать с собой?</h4>
+                                <svg class="faq-icon w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-4">
+                                <ul class="text-gray-600 dark:text-gray-300 text-sm space-y-1">
+                                    <li>• термокружку</li>
+                                    <li>• тёплые вещи</li>
+                                    <li>• средства личной гигиены</li>
+                                    <li>• йога коврик, плед</li>
+                                    <li>• фонарик</li>
+                                    <li>• удобную одежду для занятий</li>
+                                    <li>• улыбку!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <img src="./logo.svg" alt="Каникулы" class="h-8 w-auto max-w-full">
+                        <span class="ml-2 text-xl font-bold">Каникулы</span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Лагерь для взрослых, где можно отдохнуть от рутины, найти новых друзей и вернуть лёгкость детства.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/thedimarykunov/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://t.me/thedimarykunov" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Навигация</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">О мероприятии</a></li>
+                        <li><a href="#accommodation" class="text-gray-400 hover:text-white transition-colors">Проживание</a></li>
+                        <li><a href="#team" class="text-gray-400 hover:text-white transition-colors">Команда</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition-colors">Стоимость</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Контакты</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>@thedimarykunov</li>
+                        <li>17-19 октября</li>
+                        <li>Эко-отель Rapa Nui</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; Каникулы. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode support enabled
+        
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+        
+        // Telegram function
+        function openTelegram(username, message) {
+            const encodedMessage = encodeURIComponent(message);
+            const telegramUrl = `https://t.me/${username}?text=${encodedMessage}`;
+            window.open(telegramUrl, '_blank');
+        }
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Mobile menu functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+        
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            });
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        });
+        
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const faqId = this.getAttribute('data-faq');
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('.faq-icon');
+                
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-content').forEach(otherContent => {
+                    if (otherContent !== content) {
+                        otherContent.classList.add('hidden');
+                        otherContent.style.maxHeight = '0';
+                    }
+                });
+                
+                // Reset all other icons
+                document.querySelectorAll('.faq-icon').forEach(otherIcon => {
+                    if (otherIcon !== icon) {
+                        otherIcon.style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle current FAQ item
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    content.classList.add('hidden');
+                    content.style.maxHeight = '0';
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
